@@ -9,6 +9,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 // We have a custom /sign-in page for non-preview environments. In preview environments, the user
 // will be redirected to /api/auth/signin instead.
+//edited EV variable
 export const {
   handlers: { GET, POST },
   auth,
