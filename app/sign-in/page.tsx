@@ -5,7 +5,8 @@ import { redirect } from 'next/navigation'
 export default async function SignInPage() {
   const session = await auth()
   // redirect to home if user is already logged in
-  if (session?.user) {
+if (session?.user) {
+
     redirect('/')
   }
   return (
