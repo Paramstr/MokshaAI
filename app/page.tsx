@@ -1,10 +1,20 @@
-import { nanoid } from '@/lib/utils'
-import { Chat } from '@/components/chat'
+import Link from 'next/link'
 
-export const runtime = 'edge'
 
-export default function IndexPage() {
-  const id = nanoid()
+export default function LandingPage() {
+  
+  
+  return (
+    <div>
+      <h1>Hello</h1>
+      <Link href="/param-chat"> {/* Linking to the param-chat.tsx page */}
+        <button>Enter Chat</button>
+      </Link>
 
-  return <Chat id={id} />
+      
+      
+      
+    </div>
+    
+  )
 }
