@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
   :root {
@@ -75,4 +75,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Inter') format('woff2'),
+       
+  /* ... */
 }
